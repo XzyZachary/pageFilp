@@ -23,5 +23,3 @@ debug.log
 package-lock.json
 # yarn.lock
 .rnext/config/coverage
-
-!dist/
