@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
-
-import 'vue-turnjs/dist/vue-turnjs.esm.css';
+import 'amfe-flexible/index.js'
+import 'animate.css';
 
 Vue.config.productionTip = false;
 

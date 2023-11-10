@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <tttt1 msg="Hello Vue in CodeSandbox!" />
+    <scroll />
   </div>
 </template>
 
 <script>
-import tttt1 from "./components/tttt1";
+import scroll from "./pages/scroll";
 
 export default {
   name: "App",
   components: {
-    tttt1,
+    scroll,
   },
 };
 </script>
