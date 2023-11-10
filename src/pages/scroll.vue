@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <img src="@/assets/left.png" />
+        <img src="@/assets/left.png" class="side" />
         <div class="content">
             <img src="@/assets/tree.png" class="tree" />
             <div class="content-body">
@@ -10,7 +10,7 @@
                 <pageFlip class="pageFlip"></pageFlip>
             </div>
         </div>
-        <img src="@/assets/right.png" />
+        <img src="@/assets/right.png" class="side" />
     </div>
 </template>
 
@@ -32,12 +32,17 @@ export default {
     display: flex;
 
     overflow: hidden;
+    .side {
+        height: 60vh;
+    }
 
     .content {
         width: 100%;
         display: flex;
         position: relative;
         overflow: auto;
+
+    height: 60vh;
 
         &-body {
             display: flex;
@@ -62,7 +67,7 @@ export default {
         &::before {
             content: "";
             position: absolute;
-            top: 0;
+            top: 0px;
             left: 0;
             width: 100%;
             height: 30px;
@@ -83,7 +88,7 @@ export default {
     }
 
     .pageFlip {
-        min-width: 300px;
+        min-width: 40vw;
     }
 }
 

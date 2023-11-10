@@ -122,8 +122,8 @@ export default {
         this.pageFlip = new PageFlip(
             this.$refs['htmlBook'],
             {
-                width: 350, // base page width
-                height: 380, // base page height
+                width: 250, // base page width
+                height: 280, // base page height
                 // set threshold values:
             
                 maxShadowOpacity: 0.5, // Half shadow intensity
@@ -207,7 +207,7 @@ export default {
 }
 
 .page .page-content .page-header {
-    height: 10px;
+    font-size: 12px;
     text-transform: uppercase;
     text-align: center;
 }
